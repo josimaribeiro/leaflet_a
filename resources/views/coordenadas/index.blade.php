@@ -62,7 +62,7 @@
                 <td>{{ $c->latitude }}</td>
                 <td>{{ $c->longitude }}</td>
                 <td>
-                    <a href="{{ route('coordenadas.show', $c->id) }}">Ver no mapa interno</a> |
+                    <a href="{{ route('coordenadas.show', $c->id) }}" target="_blank">Ver no mapa interno</a> |
                     <a href="https://www.google.com/maps?q={{ $c->latitude }},{{ $c->longitude }}" target="_blank">
                         Google Maps
                     </a>
