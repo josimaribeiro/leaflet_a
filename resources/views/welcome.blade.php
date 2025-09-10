@@ -31,6 +31,9 @@
 <body>
     <h1>Bem-vindo ao Laravel</h1>
 
+    <p>Chave da API: {{ env('GEOAPIFY_API_KEY') }}</p>
+
+
     <a href="{{ route('coordenadas.index') }}">Ver Coordenadas</a>
     <br>
     <!-- Link para o mapa -->
