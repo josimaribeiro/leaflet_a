@@ -31,7 +31,9 @@
     @endif
 
     <a href="{{ route('coordenadas.create') }}">Cadastrar nova coordenada</a>
-    <br><br>
+    <br>
+        <a href="{{ route('mapa.interativo') }}">Ver todos os pontos no mapa interativo</a>
+    <br>
 
     <table>
         <thead>
@@ -75,6 +77,9 @@
             @endforelse
         </tbody>
     </table>
+
+
+
 </body>
 
 </html>

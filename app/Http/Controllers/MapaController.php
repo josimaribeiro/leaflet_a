@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Coordenada;
+
 class MapaController extends Controller
 {
 
@@ -38,6 +39,22 @@ class MapaController extends Controller
         $coordenada = Coordenada::findOrFail($id);
         return view('coordenadas.show', compact('coordenada'));
     }
+
+
+
+    public function mapa0()
+    {
+        $coordenadas = Coordenada::all();
+        return view('coordenadas.mapa', compact('coordenadas'));
+    }
+
+    public function mapa()
+{
+    $coordenadas = Coordenada::all();
+    $coordenadasJson = json_encode($coordenadas);
+
+    return view('coordenadas.mapa', compact('coordenadas', 'coordenadasJson'));
+}
 
 
     public function mp1()

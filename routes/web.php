@@ -17,6 +17,8 @@ Route::post('/coordenadas', [MapaController::class, 'store'])->name('coordenadas
 Route::get('/coordenadas/{id}', [MapaController::class, 'show'])->name('coordenadas.show');
 
 
+Route::get('/mapa', [MapaController::class, 'mapa'])->name('mapa.interativo');
+
 
 Route::get('/mp1', [MapaController::class, 'mp1']);
 
